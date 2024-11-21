@@ -51,7 +51,7 @@ if(DEBUG==True):
 
 #new chunk, works on ND arrays instead of taking indexes
 #def chunk(data, ncores=mp.cpu_count()):
-def chunk(data, ncores=20):
+def chunk(data, ncores=4):
     n=int(round(len(data)/ncores-0.5))
     if(n>n_max):
         n=n_max
